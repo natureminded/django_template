@@ -9,6 +9,13 @@ ready to go.
 core Django files is listed below.* Any failures updating Django variables
 to your own project and application variables, will cause the application to break.
 
+## A Word on Updating this Project:
+Just to let you know there are about 30+ steps listed below on how to customize this
+template and create a new project from it. You can definitely pursue customizing
+this on your own, and may update variables by find errors using the debugger and folllowing
+them to completion. If however, you get lost, you can use the steps below to see
+step by step exactly, how to take this repo and turn it into a new project.
+
 ## Instructions:
 
 1. Clone this repository into a folder where you'd like it to live.
@@ -93,4 +100,3 @@ you do not install the pip packages, then the server will not start.
 34. Start the server: `python manage.py runserver`. Once the server attempts to run,
 any misnamed or missed variables from our updating process will break the application.
 If the server runs, then all app variables should now be updated properly.
-35. 

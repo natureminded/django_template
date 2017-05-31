@@ -12,9 +12,12 @@ to your own project and application variables, will cause the application to bre
 ## A Word on Updating this Project:
 Just to let you know there are about 30+ steps listed below on how to customize this
 template and create a new project from it. You can definitely pursue customizing
-this on your own, and may update variables by find errors using the debugger and folllowing
+this on your own, and may update variables by finding errors using the debugger and following
 them to completion. If however, you get lost, you can use the steps below to see
-step by step exactly, how to take this repo and turn it into a new project.
+step by step exactly, how to take this repo and turn it into a new project. It's
+one of those things that on the surface is more intimidating than it actually is.
+Essentially, in a nut shell, we've got to update all old project and application
+variable names to our new project.
 
 ## Instructions:
 

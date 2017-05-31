@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Load Access to Django Static Files -->
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Load Django Static CSS Sheet -->
+    <link rel="stylesheet" href="{% static 'template/css/style.css' %}">
+    <title>Django Template</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <a href="/logout">Logout</a>
+    <fieldset><legend>Current User Data:</legend>
+        <p>Note: Update any actions in your `dashboard.py` file to gather any data you might need.</p>
+        <pre>ID: {{current_user.id}}</pre>
+        <pre>NAME: {{current_user.first_name}} {{current_user.last_name}}</pre>
+        <pre>CREATED AT: {{current_user.created_at}}</pre>
+        <p>This file must be updated and built from to include your application features.</p>
+    </fieldset>
+</body>
+</html>

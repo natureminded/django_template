@@ -19,6 +19,9 @@ one of those things that on the surface is more intimidating than it actually is
 Essentially, in a nut shell, we've got to update all old project and application
 variable names to our new project.
 
+*Disclaimer:* It might even be faster to create a new Django project
+from scratch, and copy and paste in the basic routes or views.
+
 ## Instructions:
 
 1. Clone this repository into a folder where you'd like it to live.

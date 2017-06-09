@@ -7,7 +7,7 @@ from . import dashboard # grab custom dashboard helper module
 # https://docs.djangoproject.com/en/1.11/ref/contrib/messages/#creating-custom-message-levels
 LOGIN_ERR = 50 # Messages level for login errors
 REG_ERR = 60 # Messages level for registration errors
-LOGOUT_SUCC = 80 # Messages level for logout success messages
+LOGOUT_SUCC = 70 # Messages level for logout success messages
 
 
 def index(request):

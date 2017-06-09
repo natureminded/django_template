@@ -11,9 +11,9 @@ LOGOUT_SUCC = 80 # Messages level for logout success messages
 
 
 def index(request):
-    """Loads login/registration homepage."""
+    """If GET, load login/registration homepage; if POST, validate and register user."""
 
-    # If request method is a POST, validate and register:
+    # If POST, validate and register:
     if request.method == "POST":
         # Prepare registration data for validation:
         reg_data = {
@@ -50,7 +50,7 @@ def index(request):
             # Load dashboard and get dashboard data:
             return redirect("/dashboard")
 
-    # If request method is not POST, load login/registration page:
+    # If GET, load login/registration page:
     else:
         return render(request, "template/index.html")
 
@@ -61,7 +61,7 @@ def login(request):
     Notes: If successful, retrieve validated user and load dashboard page. Otherwise,
     reload index page with django errors.
     """
-    # If request method is a POST, validate and login:
+    # If POST, validate and login:
     if request.method == "POST":
         # Prepare user submitted data for validation:
         login_data = {
@@ -94,7 +94,7 @@ def login(request):
             # Fetch dashboard data and load dashboard page:
             return redirect("/dashboard")
 
-    # If request method is not a POST, reload index as this is an unexpected request:
+    # If GET, reload index as this is an unexpected request:
     else:
         print "Unexpected errors occurred."
         messages.add_message(request, LOGIN_ERR, "An unexpected error has occurred.", extra_tags="login_errors")

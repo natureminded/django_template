@@ -1,6 +1,6 @@
 # Django Template
 
-This is a basic Django project and singular application, which includes login
+This is a basic Django (1.11)  project and singular application, which includes login
 and registration features, along with validations. This is a useful django 1.11
 template to build larger projects, with the basic login and validation features
 ready to go.
